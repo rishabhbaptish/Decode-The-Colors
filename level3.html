@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decode the Colors</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body
+        style="background-image: url('assets/Initial_Screen.svg'); background-size: cover; background-repeat: no-repeat;">
+        <div class="container">
+            <header>
+                <div
+                    style="display: flex; position: fixed; justify-content: center; top: 4.2%; left: 35%;">
+                    <div class="image-button" id="level" data="3">
+                        <img src="assets/l3.svg" />
+                    </div>
+                </div>
+                <div
+                    style="display: flex; position: fixed; justify-content: center; top: 2%; right: 20%;">
+                    <button class="image-button" id="exit">
+                        <img src="assets/exit.svg" alt="Button Image" />
+                    </button>
+                </div>
+                <h1>Decode The Colors</h1>
+                <div class="moves-left">
+                    <span class="number">10</span>
+                    <span class="text">Moves left</span>
+                </div>
+                <p>Each circle has a color to it and you have to fill the
+                    circles with the correct colors.</p>
+            </header>
+
+            <main style="height: 70%;">
+                <div
+                    style="display: flex; flex-direction: row; justify-content: space-between; height: 100%;">
+
+                    <div class="game-area">
+                        <div style="margin-bottom: 10%; color: #B4B4B4;">Fill
+                            the circles with correct colours</div>
+                        <div class="circle-area" style="gap: 15px;">
+                            <div class="outer-ring" style="width: 105px; height: 105px;">
+                                <div class="middle-ring" style="width: 95px; height: 95px;">
+                                    <div class="inner-circle"
+                                        id="circle1" style="width: 80px; height: 80px;"></div>
+
+                                </div>
+                            </div>
+
+                            <div class="outer-ring">
+                                <div class="middle-ring">
+                                    <div class="inner-circle"
+                                        id="circle2"></div>
+                                </div>
+                            </div>
+                            <div class="outer-ring">
+                                <div class="middle-ring">
+                                    <div class="inner-circle"
+                                        id="circle2"></div>
+                                </div>
+                            </div>
+                            <div class="outer-ring">
+                                <div class="middle-ring">
+                                    <div class="inner-circle"
+                                        id="circle2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="color-selector">
+                            <label for="color-choice">Select colour</label>
+                            <div class="colors-gameArea">
+                                <div class="color-option violet"
+                                    draggable="true" data-color="violet"></div>
+                                <div class="color-option green"
+                                    draggable="true" data-color="green"></div>
+                                <div class="color-option lightcoral"
+                                    draggable="true"
+                                    data-color="lightcoral"></div>
+                                <div class="color-option brown"
+                                    draggable="true" data-color="brown"></div>
+                                <div class="color-option purple"
+                                    draggable="true" data-color="purple"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Move Order Panel -->
+                    <div class="move-order-panel">
+                        <div class="move-order-panel-top">Move Order</div>
+                        <div class="move-list">
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <button class="image-button" id="skip">
+                            <img src="assets/skip.svg" alt="Button Image" />
+                        </button>
+                        <button class="image-button" id="hints">
+                            <img src="assets/hints.svg" alt="Button Image" />
+                        </button>
+                        <button class="image-button" id="rules">
+                            <img src="assets/rules.svg" alt="Button Image" />
+                        </button>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Buttons -->
+            <footer>
+                <div
+                    style="display: flex; justify-content: center; margin-top: 2%;">
+                    <button class="image-button" id="submit">
+                        <img src="assets/submit.svg" alt="Button Image" />
+                    </button>
+                </div>
+
+            </footer>
+        </div>
+        <script src="script.js" defer></script>
+
+    </body>
+</html>

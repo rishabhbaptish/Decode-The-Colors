@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decode the Colors</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body
+        style="background-image: url('assets/Initial_Screen.svg'); background-size: cover; background-repeat: no-repeat;">
+        <div class="container" style="background: none; box-shadow: none;">
+            <header>
+                <h1 style="color: white; font-size: 60px;">DECODE THE COLORS</h1>
+            </header>
+
+            <main style="height: 70%;">
+                <div
+                    style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                    <div
+                        style="display: flex; justify-content: center; ">
+                        <button class="image-button" id="start">
+                            <img src="assets/play.svg" alt="Button Image" />
+                        </button>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: center; margin-top: 5%;">
+                        <button class="image-button" id="rules">
+                            <img src="assets/htp.svg" alt="Button Image" />
+                        </button>
+                    </div>
+                </main>
+            </div>
+            <script>
+                const Start = document.getElementById("start");
+                const Rules = document.getElementById("rules");
+                Rules.addEventListener("click", () => {
+                    window.location.href = 'rules.html';
+                });
+                Start.addEventListener("click", () => {
+                    window.location.href = 'level1.html';
+                })
+            </script>
+
+        </body>
+    </html>

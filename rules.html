@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decode the Colors</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body
+        style="background-image: url('assets/Initial_Screen.svg'); background-size: cover; background-repeat: no-repeat;">
+        <div class="container">
+            <header>
+                <h1>Decode the Colors</h1>
+            </header>
+
+            <main style="height: 70%;">
+                <div
+                    style="display: flex; flex-direction: row; justify-content: space-between; height: 100%;">
+
+                    <div class="game-area">
+                        <p style="color: #979494; text-align: center; font-size: 20px; margin-bottom: 1%;">How to Play</p>
+                        <div style="color: #4a4a4a; text-align: left; margin: 1% 5%">1. Select a color from the
+                            palette.
+                            Drag and drop the selected color into one of the
+                            circles.</div>
+                        <div style="color: #4a4a4a; text-align: left; margin: 1% 5%">2. After filling all the
+                            circles, click the Submit button.</div>
+                        <div style="color: #4a4a4a; text-align: left; margin: 1% 5%">3. Feedback will be
+                            displayed in the Move Order pane.
+                            It shows which colors and positions are
+                            correct.</div>
+                        <div style="color: #4a4a4a; text-align: left; margin: 1% 5%">4. Use this as a clue for
+                            your next guess.</div>
+                        <div style="color: #4a4a4a; text-align: left; margin: 1% 5%">5. Each level has a set
+                            number of moves.
+                            If you exceed the allowed moves without solving the
+                            puzzle, you will have to retry the level.</div>
+                        <div style="color: #4a4a4a; text-align: left; margin: 1% 5%">6. When you correctly guess
+                            the color sequence, you can then proceed to the next level.</div>
+
+                    </div>
+                </div>
+            </main>
+
+            <!-- Buttons -->
+            <footer>
+                <div
+                    style="display: flex; justify-content: center; margin-top: 2%;">
+                    <button class="image-button" id="submit">
+                        <img src="assets/exit.svg" alt="Button Image" />
+                    </button>
+                </div>
+
+            </footer>
+        </div>
+        <script>
+            const submitButton = document.getElementById("submit");
+            submitButton.addEventListener("click", () => {
+                window.history.back();
+            });
+        </script>
+    </body>
+</html>
