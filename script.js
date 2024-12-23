@@ -52,7 +52,6 @@ function generateRandomPattern() {
     ];
 }
 generateRandomPattern();
-console.log(correctPattern);
 colorOptions.forEach(option => {
     option.addEventListener('dragstart', event => {
         event.dataTransfer.setData('color', option.dataset.color);
